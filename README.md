@@ -34,4 +34,4 @@ A responsive product preview card built for the Frontend Mentor challenge.
 ## Links
 
 - [Github](https://github.com/98Dinesh89/Frontend-Mentor-Product-preview-card-component)
-- [Github](https://github.com/98Dinesh89/Frontend-Mentor-Product-preview-card-component)
+- [Live Site](https://98dinesh89.github.io/Frontend-Mentor-Product-preview-card-component/)
