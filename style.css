@@ -1,0 +1,138 @@
+:root {
+  /* Primary */
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+
+  /* Neutral */
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  min-height: 952px;
+}
+
+#desktop {
+  display: none;
+}
+
+#mobile {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Monserrat;
+  background-color: var(--white);
+  width: 90%;
+  padding: 0px 0px 20px 0px;
+  border-radius: 10px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 30px;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.buy {
+  background-color: var(--green-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border-radius: 10px;
+  gap: 10px;
+  color: var(--white);
+}
+
+#perfume {
+  font-family: "Montserrat", sans-serif;
+  color: var(--grey);
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#title,
+#pfirst {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p,
+#pend {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+#pfirst {
+  color: var(--green-500);
+}
+
+#pend {
+  text-decoration: line-through;
+}
+
+.buy:hover {
+  background-color: var(--green-700);
+}
+
+@media (min-width: 375px) {
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: block;
+    height: auto;
+    object-fit: cover;
+    min-width: 50%;
+  }
+
+  .container {
+    max-width: 40%;
+    max-width: 600px;
+    flex-direction: row;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .content {
+    padding: 20px 30px;
+  }
+}
